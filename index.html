@@ -40,6 +40,27 @@
             }
         </script>
     </nav>
+    <div class="nav_background" onclick="openNav();"></div>
+    <nav class="mobile-nav">
+        <div class="nav-button" onclick="openNav();">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="links-container">
+            <a href="#" id="start-button" onclick="openNav();"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Home</span></a>
+            <a href="#game-dev" id="game-dev-button-en" onclick="openNav();"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
+            <a href="#examples-3d" id="r3d-button-en" onclick="openNav();"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
+            <a href="#front-end" id="front-end-button-en" onclick="openNav();"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
+            <a href="" id="contact-button-en" onclick="openNav();"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
+        </div>
+        <script>
+            function openNav(){
+                const mobNav = document.querySelector(".mobile-nav");
+                const backdrop = document.querySelector(".nav_background");
+                mobNav.classList.toggle("mobile-nav-hidden");
+                backdrop.classList.toggle("mobile-nav-hidden");
+            }
+        </script>
+    </nav>
     <div class="title-card">
         <div class="title-info">
             <h1>NICOLÁS HERRERA SEPÚLVEDA</h1>
