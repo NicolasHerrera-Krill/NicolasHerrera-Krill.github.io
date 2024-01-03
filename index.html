@@ -10,11 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/9562e9edf3.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
-
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 </head>
 <body>
     <nav class="nav-bar">
@@ -143,8 +156,7 @@
                     In addition, I have made prototypes for other video games, such as a retro 3D flight simulator.
                     <br>
                 </p>
-                <a href="https://dethreaper.itch.io/" class="quick_link" target="_blank">CHECK OUT MY PUBLISHED GAMES</a>
-                <br>
+                <a href="https://dethreaper.itch.io/" class="quick_link" target="_blank" id="games-button">CHECK OUT MY PUBLISHED GAMES</a>
             </div>
         </div>
     </section>
@@ -255,6 +267,27 @@
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="title">
+            <h2>Get in touch!</h2>
+        </div>
+        <div class="contact-container">
+            <div class="socials">
+                <h3>Visit my projects</h3>
+            </div>
+            <div class="image">
+                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" ar poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1"></model-viewer>
+            </div>
+            <div class="mail">
+                <h3>Or contact me directly!</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2023 Nicolás Herrera Sepúlveda
+    </footer>
     <script>
         function labnolIframe(div) {
             var iframe = document.createElement('iframe');
