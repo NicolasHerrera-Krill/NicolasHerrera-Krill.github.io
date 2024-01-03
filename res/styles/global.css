@@ -1,18 +1,139 @@
 :root{
-    --black: #30292F;
-    --violet: #413F54;
-    --blue: #355691;
+    --black: #232534;
+    --violet: #6E6996;
+    --blue: #B3CFFF;
     --white: #FFFCFF;
-    --yellow: #FFF8D7;
+    --yellow: #FFFCED;
 }
+
 
 body{
     background-color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .title-card{
-    position: absolute;
     top:0;
     left:0;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
 }
+
+.title-card img{
+    height: 100vh;
+}
+.title-card .title-info{
+    padding: 2vw 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    color: var(--blue);
+    font-size: 2vw;
+    margin: 0;
+}
+
+h3{
+    margin-top: 0;
+    color: var(--white);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 96vw;
+    gap: 1vw;
+    justify-content: start;
+    padding: 1vw 2vw;
+    z-index: 2;
+    transition: transform 0.5s;
+
+}
+.nav--hidden {
+    transform: translateY(calc(-1 * 8rem));
+    box-shadow: none;
+    transition: transform 0.5s;
+  }
+.quick_link{
+    background-color: var(--violet);
+    padding: 0.8vw 1vw;
+    border-radius: 2vw;
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    transition: 0.1s;
+    font-size: 1vw;
+    width: max-content;
+    height: 1.2vw;
+}
+
+.quick_link.hidden{
+    width: 1vw;
+}
+
+.quick_link .hidden-button-text{
+    width: 0;
+    height: 1vw;
+    overflow: hidden;
+    /* display: none; */
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.quick_link:hover{ 
+    background-color: var(--blue);
+    scale: 1.1;
+} 
+
+.quick_link.hidden:hover{ 
+    background-color: var(--blue);
+    scale: 1.1;
+    width: 12vw;
+    height: 1.2vw;
+} 
+
+.quick_link:hover .hidden-button-text{ 
+    display: flex;
+    align-items: center;
+    width: max-content;
+    opacity: 1;
+    transition: 0.25s;
+} 
+
+.quick_link#start-button:hover {
+    width: 5vw;
+}
+.quick_link#game-dev-button:hover {
+    width: 8vw;
+}
+.quick_link#r3d-button:hover {
+    width: 11vw;
+}
+.quick_link#contact-button:hover {
+    width: 6.5vw;
+}
+
+
+@media (max-width: 996px){
+    .title-card{
+        position: absolute;
+        top:0;
+        left:0;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .title-card img{
+        width: 100vw;
+        height: auto;
+    }
+}
+
+.game
