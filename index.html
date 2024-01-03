@@ -48,7 +48,86 @@
         </picture>
     </div>
     <section class="game-dev">
-        div
+        <h2>Videogame Development</h2>
+        <div class="game-card">
+            <div class="game-info">
+                <h3>ProbaUAM-VR</h3>
+                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
+                <p>
+                    Investigation on VR games for the treatment and prevention of instability in older adults, at Autonomous University of Manizales.
+                    <br>
+                    Since 2021 I have developed multiple games on VR to help players with their different physical-therapeautical activities. They have been developed on Unity 3D for the SteamVR platform.
+                </p>
+            </div>
+            <div class="game-video-container">
+                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="game-video-container">
+                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+            </div>
+            <div class="game-info">
+                <h3>Cognitiv</h3>
+                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
+                <p>
+                    Functional development of a serious video game platform in virtual reality to prevent and treat motor and cognitive impairment, for the Autonomous University of Manizales.
+                    <br>
+                    The games were developed in Unity for the Steam-VR platform. They were developed in 2023 to present the startup competition for PRO-Accelerator in Bizkaia.
+
+
+                </p>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="game-info">
+                <h3>Shadows In the Snow</h3>
+                <div class="skill-icons"><img src="res/img/Godot.webp" alt=""><i class="fa-brands fa-java"></i></div>
+                <p>
+                    (WIP) Retro 2D video game made as a personal project in Godot. It is an adaptation of several works by author H.P. Lovecraft, like Dreams in the Witch House or Nyarlathotep.
+                    It has been in development since 2020, and most of the art, software development, and design of the game is done by me.
+                </p>
+            </div>
+            <div class="game-video-container">
+                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="game-video-container">
+                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+            </div>
+            <div class="game-info">
+                <h3>Other Projects</h3>
+                <div class="skill-icons"><img src="res/img/Godot.webp" alt=""></div>
+                <p>
+                    I have participated in multiple game jams, in which I am required to make a fully functional video game in a couple of days.
+                    <br>
+                    In addition, I have made prototypes for other video games, such as a retro 3D flight simulator.
+                </p>
+            </div>
+        </div>
+            
     </section>
+    <script>
+        // var observer = new IntersectionObserver(function(entries) {
+        //         if(entries[0]['isIntersecting'] === true) {
+        //             if(entries[0]['intersectionRatio'] === 1)
+        //                 document.querySelector("#video-production").contentWindow.postMessage( '{"event":"command", "func":"playVideo", "args":""}', '*')
+        //                 labnolIframe(document.querySelector("#video-production"));
+        //         }
+        //     }, { threshold: [0, 0.5, 1] });
+
+        //     observer.observe(document.querySelector("#video-production"));
+
+        function labnolIframe(div) {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?controls=1&amp;autoplay=0&amp;mute=0&amp;loop=1&amp;&enablejsapi=1&showinfo=0');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('class', 'game-video');
+            div.parentNode.replaceChild(iframe, div);
+          }
+    </script>
 </body> 
 </html>
