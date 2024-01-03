@@ -255,3 +255,121 @@ h3{
     height: 19.6875vw;
     border-radius: 1vw;
 }
+
+
+@media (max-width:996px){
+    .game-dev{
+        padding: 10vw;
+        gap: 4vw;
+    }
+
+    .game-dev h2{
+        font-size: 5vw;
+    }
+    .game-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5vw;
+        border-radius: 4vw;
+    }
+
+    .game-card h3{
+        font-size: 4vw;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .game-card p{
+        color: var(--black);
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    .game-card .skill-icons{
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+    }
+
+    .game-card i{
+        font-size: 4vw;
+    }
+
+    .game-card img{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .game-card .game-info{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+    }
+    .game-video-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .game-card .game-video{
+        background-color: var(--black);
+        width: 70vw;
+        height: 39.375vw;
+        border-radius: 3vw;
+    }
+}
+
+.rendering-3d{
+    background-color: var(--black);
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rendering-3d h2{
+    color: var(--yellow);
+    font-size: 2vw;
+    text-align: center;
+}
+
+.rendering-3d p{
+    color: var(--white);
+    font-size: 1vw;
+    width: 60vw;
+    text-align: center;
+}
+
+.render-slider{
+    width: 90vw;
+}
+
+
+.render-slider img{
+    margin: 10vw 0vw;
+    width: 30vw;
+    height: auto;
+    border-radius: 2vw;
+    transition: 0.25s;
+    z-index: -20;
+
+}
+
+.slick-center .render-image img{
+    transform: scale(2);
+    z-index: 20;
+    opacity: 1;
+    filter: drop-shadow(0px 0px 0.3vw var(--blue)) saturate(1.1)
+}
+
+
+.front-end{
+    background-color: var(--blue);
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
