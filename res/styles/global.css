@@ -85,7 +85,8 @@ body{
         background-color: var(--black);
         display: flex;
         flex-direction: column;
-        padding: 5vw 10vw;
+        justify-content: end;
+        padding: 5vw 10vw 20vw 10vw;
         gap: 1vw;
     }
 
@@ -318,7 +319,13 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
+}
+.game-card .game-video img{
+    width: 35vw;
+    height: 19.6875vw;
+    border-radius: 1vw;
+    object-fit: cover;
 }
 .game-card .game-video{
     background-color: var(--black);
@@ -384,6 +391,12 @@ h3{
         align-items: center;
         justify-content: center;
 
+    }
+    .game-card .game-video img{
+        width: 70vw;
+        height: 39.375vw;
+        border-radius: 3vw;
+        object-fit: cover;
     }
     .game-card .game-video{
         background-color: var(--black);

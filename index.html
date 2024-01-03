@@ -40,8 +40,8 @@
             }
         </script>
     </nav>
-    <div class="nav_background" onclick="openNav();"></div>
-    <nav class="mobile-nav">
+    <div class="nav_background mobile-nav-hidden" onclick="openNav();"></div>
+    <nav class="mobile-nav mobile-nav-hidden">
         <div class="nav-button" onclick="openNav();">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -75,23 +75,7 @@
     <section class="game-dev"  id="game-dev">
         <h2>Videogame Development</h2>
         <div class="game-card">
-            <div class="game-info">
-                <h3>ProbaUAM-VR</h3>
-                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
-                <p>
-                    Investigation on VR games for the treatment and prevention of instability in older adults, at Autonomous University of Manizales.
-                    <br>
-                    Since 2021 I have developed multiple games on VR to help players with their different physical-therapeautical activities. They have been developed on Unity 3D for the SteamVR platform.
-                </p>
-            </div>
-            <div class="game-video-container">
-                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
-            </div>
-        </div>
-        <div class="game-card">
-            <div class="game-video-container">
-                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
-            </div>
+           
             <div class="game-info">
                 <h3>Cognitiv</h3>
                 <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
@@ -103,7 +87,31 @@
 
                 </p>
             </div>
+            <div class="game-video-container">
+                <div class="game-video" data-id="hb2SPofHG1M" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/cognitiv.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/cognitiv.png';">
+                </div>
+            </div>
         </div>
+        <div class="game-card">
+            <div class="game-video-container">
+                <div class="game-video" data-id="2j4chQ2ZjcY" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/probauam.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/probauam.png';">
+
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>ProbaUAM-VR</h3>
+                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
+                <p>
+                    Investigation on VR games for the treatment and prevention of instability in older adults, at Autonomous University of Manizales.
+                    <br>
+                    Since 2021 I have developed multiple games on VR to help players with their different physical-therapeautical activities. They have been developed on Unity 3D for the SteamVR platform.
+                </p>
+            </div>
+            
+        </div>
+        
         <div class="game-card">
             <div class="game-info">
                 <h3>Shadows In the Snow</h3>
@@ -114,12 +122,17 @@
                 </p>
             </div>
             <div class="game-video-container">
-                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+                <div class="game-video" data-id="I9kKmGDkbyc" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/shadows.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/shadows.png';">
+                </div>
             </div>
         </div>
         <div class="game-card">
             <div class="game-video-container">
-                <div class="game-video" data-id="jT4ou50SRg0" id="video-production" onclick="labnolIframe(this);"></div>
+                <div class="game-video" data-id="s8ULuNDTxuM" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/misc.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/misc.png';">
+                
+                </div>
             </div>
             <div class="game-info">
                 <h3>Other Projects</h3>
@@ -245,7 +258,7 @@
     <script>
         function labnolIframe(div) {
             var iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?controls=1&amp;autoplay=0&amp;mute=0&amp;loop=1&amp;&enablejsapi=1&showinfo=0');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?controls=1&amp;autoplay=1&amp;mute=0&amp;loop=1&amp;&enablejsapi=1&showinfo=0');
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allowfullscreen', '1');
             iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
