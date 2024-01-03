@@ -67,7 +67,7 @@ h3{
     font-weight: 600;
     text-decoration: none;
     display: flex;
-    transition: 0.1s;
+    transition:ease-in-out 0.2s;
     font-size: 1vw;
     width: max-content;
     height: 1.2vw;
@@ -117,6 +117,19 @@ h3{
 }
 .quick_link#contact-button:hover {
     width: 6.5vw;
+}
+
+.quick_link#game-dev-button-en:hover {
+    width: 7vw;
+}
+.quick_link#r3d-button-en:hover {
+    width: 8.5vw;
+}
+.quick_link#front-end-button-en:hover {
+    width: 9vw;
+}
+.quick_link#contact-button-en:hover {
+    width: 5.5vw;
 }
 
 
