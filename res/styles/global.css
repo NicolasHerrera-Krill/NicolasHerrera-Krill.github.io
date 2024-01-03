@@ -141,7 +141,8 @@ h3{
     .title-card{
         top:0;
         left:0;
-        height: 100vh;
+        min-height: 100vh;
+        height: max-content;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -220,8 +221,9 @@ h3{
     font-size: 1vw;
     font-weight: 400;
 }
-.game-card .skill-icons{
+.skill-icons{
     display: flex;
+    font-size: 1.5vw;
     gap: 0.5vw;
 }
 
@@ -284,9 +286,10 @@ h3{
         font-size: 3vw;
         font-weight: 400;
     }
-    .game-card .skill-icons{
+    .skill-icons{
         display: flex;
         gap: 2vw;
+        font-size: 4vw;
         justify-content: center;
     }
 
@@ -391,6 +394,12 @@ h3{
         z-index: -20;
 
     }
+    .slick-center .render-image img{
+        transform: scale(2);
+        z-index: 20;
+        opacity: 1;
+        filter: drop-shadow(0px 0px 2vw var(--blue)) saturate(1.1)
+    }
 }
 
 .slick-center .render-image img{
@@ -413,4 +422,111 @@ h3{
     color: var(--black);
     font-size: 2vw;
     text-align: center;
+}
+.front-end-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.front-end .front-end-info{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 35vw;
+}
+
+.front-end .front-end-info p{
+    font-size: 1vw;
+}
+
+.front-end .front-end-photos{
+    height: 35vw;
+}
+.front-end .front-end-photos img{
+    position: absolute;
+    transition: 0.25s;
+}
+
+.front-end .front-end-photos img:hover{
+    scale: 1.1;
+}
+
+.front-end .front-end-photos #phone{
+    width: 15vw;
+    right: 15vw;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+}
+.front-end .front-end-photos #laptop{
+    width: 40vw;
+    position: absolute;
+    right: 15vw;
+    margin: 5vw 0vw;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+        rotate: 3deg;
+		transform: translatey(-2vw);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@media (max-width:996px){
+    .front-end{
+        background-color: var(--blue);
+        padding: 10vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .front-end h2{
+        color: var(--black);
+        font-size: 5vw;
+        text-align: center;
+    }
+    .front-end-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .front-end .front-end-info{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+    }
+    .front-end .front-end-info p{
+        font-size: 3vw;
+    }
+    
+    
+    .front-end .front-end-photos{
+        height: 80vw;
+    }
+    
+    
+    .front-end .front-end-photos #phone{
+        width: 30vw;
+        right: 15vw;
+        z-index: 2;
+        margin: 5vw 0vw;
+        animation: float 6s ease-in-out infinite;
+    }
+    .front-end .front-end-photos #laptop{
+        width: 70vw;
+        position: absolute;
+        right: 20vw;
+        margin: 20vw 0vw;
+        animation: float 7s ease-in-out infinite;
+    }
 }
