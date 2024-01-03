@@ -13,36 +13,6 @@ body{
     margin: 0;
 }
 
-.title-card{
-    top:0;
-    left:0;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    z-index: -1;
-}
-
-.title-card img{
-    height: 100vh;
-}
-.title-card .title-info{
-    padding: 2vw 3vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-h1{
-    color: var(--blue);
-    font-size: 2vw;
-    margin: 0;
-}
-
-h3{
-    margin-top: 0;
-    color: var(--white);
-    font-size: 1.5vw;
-    font-weight: 400;
-}
 .nav-bar{
     position: fixed;
     display: flex;
@@ -132,21 +102,92 @@ h3{
     width: 5.5vw;
 }
 
+.title-card{
+    top:0;
+    left:0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
+}
+
+.title-card img{
+    height: 100vh;
+}
+.title-card .title-info{
+    padding: 2vw 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    color: var(--blue);
+    font-size: 2vw;
+    margin: 0;
+}
+
+h3{
+    margin-top: 0;
+    color: var(--white);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
 
 @media (max-width: 996px){
+    .nav-bar{
+        display: none !important;
+    }
     .title-card{
-        position: absolute;
         top:0;
         left:0;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+    .title-card picture{
+        height: 117.59259259259258vw;
+    }
     .title-card img{
         width: 100vw;
         height: auto;
     }
+    .title-card .title-info{
+        padding: 15vw 10vw 5vw 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    h1{
+        color: var(--blue);
+        font-size: 5vw;
+        margin: 0;
+    }
+    
+    h3{
+        margin-top: 0;
+        color: var(--white);
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    .quick_link{
+        background-color: var(--violet);
+        padding: 1.5vw 3vw;
+        border-radius: 5vw;
+        color: var(--black);
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        transition:ease-in-out 0.2s;
+        font-size: 3vw;
+        width: max-content;
+        height: 4vw;
+    }
 }
 
-.game
+.game-dev{
+    padding: 5vw;
+    background-color: var(--yellow);
+}
