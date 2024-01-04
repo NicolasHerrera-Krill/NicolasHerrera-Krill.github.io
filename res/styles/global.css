@@ -690,6 +690,7 @@ h3{
     padding: 0.5vw 1vw;
     background-color: var(--yellow);
     font-family: 'Poppins', sans-serif;
+    width: 20vw;
 }
 .contact .mail textarea{
     border: 0;
@@ -698,6 +699,8 @@ h3{
     padding: 0.5vw 1vw;
     background-color: var(--yellow);
     font-family: 'Poppins', sans-serif;
+    width: 20vw;
+
 }
 model-viewer{
     width: 30vw;
@@ -773,6 +776,8 @@ input.quick_link:hover{
         padding: 1vw 3vw;
         background-color: var(--yellow);
         font-family: 'Poppins', sans-serif;
+        width: 60vw;
+
     }
     .contact .mail textarea{
         border: 0;
@@ -781,6 +786,7 @@ input.quick_link:hover{
         padding: 1vw 3vw;
         background-color: var(--yellow);
         font-family: 'Poppins', sans-serif;
+        width: 60vw;
     }
     model-viewer{
         
