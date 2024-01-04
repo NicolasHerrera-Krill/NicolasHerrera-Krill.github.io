@@ -35,7 +35,7 @@
         <a href="#game-dev" id="game-dev-button-en" class="quick_link hidden"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
         <a href="#examples-3d" id="r3d-button-en" class="quick_link hidden"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
         <a href="#front-end" id="front-end-button-en"class="quick_link hidden"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
-        <a href="" id="contact-button-en" class="quick_link hidden"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
+        <a href="#contact" id="contact-button-en" class="quick_link hidden"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
         <script>
             {
                 const nav = document.querySelector(".nav-bar");
@@ -63,8 +63,7 @@
             <a href="#game-dev" id="game-dev-button-en" onclick="openNav();"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
             <a href="#examples-3d" id="r3d-button-en" onclick="openNav();"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
             <a href="#front-end" id="front-end-button-en" onclick="openNav();"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
-            <a href="" id="contact-button-en" onclick="openNav();"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
-            <hr>
+            <a href="#contact" id="contact-button-en" onclick="openNav();"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
             
         </div>
         <script>
@@ -270,20 +269,20 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="title">
             <h2>Get in touch!</h2>
         </div>
         <div class="contact-container">
             <div class="socials">
                 <h3>Visit my other pages</h3>
-                <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href=""><i class="fa-brands fa-itch-io"></i> itch.io</a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i> Instagram</a>
-                <a href=""><i class="fa-brands fa-google-drive"></i> Google Drive</a>
+                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a>
+                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-itch-io"></i>&nbsp; itch.io</a>
+                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-square-instagram"></i>&nbsp; Instagram</a>
+                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-google-drive"></i>&nbsp; Google Drive</a>
             </div>
             <div class="image">
-                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" auto-rotate poster="shared-assets/models/NeilArmstrong.webp" camera-controls shadow-intensity="1"></model-viewer>
+                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" auto-rotate poster="shared-assets/models/mr-mort.webp" camera-controls shadow-intensity="1"></model-viewer>
             </div>
             <div class="mail">
                 <h3>Or contact me directly!</h3>

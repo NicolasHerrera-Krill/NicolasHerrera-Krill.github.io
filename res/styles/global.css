@@ -638,4 +638,18 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.contact .socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
 
+.contact .socials i{
+    font-size: 1.5vw;
+}
+model-viewer{
+    width: 30vw;
+    height: 30vw;
+}
