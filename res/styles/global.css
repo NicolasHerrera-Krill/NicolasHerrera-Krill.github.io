@@ -85,8 +85,8 @@ body{
         background-color: var(--black);
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        padding: 5vw 10vw 20vw 10vw;
+        justify-content: start;
+        padding: 10vw 10vw 5vw 10vw;
         gap: 1vw;
     }
 
@@ -638,3 +638,4 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
