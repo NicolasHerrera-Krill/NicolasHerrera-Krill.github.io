@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Herrera - Portfolio</title>
+    <title>Nicolás Herrera - Portafolio</title>
+    
     <link rel="stylesheet" href="res/styles/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/9562e9edf3.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 </head>
 <body>
     <nav class="nav-bar">
-        <a href="" id="start-button" class="quick_link hidden"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Inicio</span></a>
-        <a href="" id="game-dev-button" class="quick_link hidden"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Videojuegos</span></a>
-        <a href="" id="r3d-button" class="quick_link hidden"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;Renderizado en 3D</span></a>
-        <a href="" id="front-end-button"class="quick_link hidden"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Desarrollo Front-end</span></a>
-        <a href="" id="contact-button" class="quick_link hidden"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contacto</span></a>
+        <a href="#" id="start-button" class="quick_link hidden"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Inicio</span></a>
+        <a href="#game-dev" id="game-dev-button" class="quick_link hidden"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Videojuegos</span></a>
+        <a href="#examples-3d" id="r3d-button" class="quick_link hidden"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;Renderizado en 3D</span></a>
+        <a href="#front-end" id="front-end-button"class="quick_link hidden"><i class="fa-solid fa-laptop-code"></i> <span class="hidden-button-text">&nbsp;Desarrollo Front-End</span></a>
+        <a href="#contact" id="contact-button" class="quick_link hidden"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contacto</span></a>
         <script>
             {
                 const nav = document.querySelector(".nav-bar");
@@ -35,20 +53,281 @@
             }
         </script>
     </nav>
+    <div class="nav_background mobile-nav-hidden" onclick="openNav();"></div>
+    <nav class="mobile-nav mobile-nav-hidden">
+        <div class="nav-button" onclick="openNav();">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="links-container">
+            <a href="#" id="start-button" onclick="openNav();"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Home</span></a>
+            <a href="#game-dev" id="game-dev-button-en" onclick="openNav();"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
+            <a href="#examples-3d" id="r3d-button-en" onclick="openNav();"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
+            <a href="#front-end" id="front-end-button-en" onclick="openNav();"><i class="fa-solid fa-laptop-code"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
+            <a href="#contact" id="contact-button-en" onclick="openNav();"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-herrera-sep%C3%BAlveda-b16342278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://dethreaper.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.instagram.com/decranom/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="/"><i class="fa-solid fa-globe"></i>&nbsp;<span>View in English</span> </a>
+            <p>© 2023 Nicolás Herrera Sepúlveda</p>
+        </div>
+        <script>
+            function openNav(){
+                const mobNav = document.querySelector(".mobile-nav");
+                const backdrop = document.querySelector(".nav_background");
+                mobNav.classList.toggle("mobile-nav-hidden");
+                backdrop.classList.toggle("mobile-nav-hidden");
+            }
+        </script>
+    </nav>  
+    <div class="lang_button">
+        <a href="/"><span>View in English&nbsp;</span> <i class="fa-solid fa-globe"></i></a>
+    </div>
     <div class="title-card">
         <div class="title-info">
             <h1>NICOLÁS HERRERA SEPÚLVEDA</h1>
-            <h3>Desarrollador de software con enfoque en videojuegos, artista en 3D</h3>
-            <a href="" class="quick_link">CONTACTO</a>
+            <h3>Desarrollador de software con enfoque en videojuegos, artista en 3D.</h3>
+            <a href="#contact" class="quick_link">CONTACTO</a>
         </div>
         <picture>
-            <source media="(max-width:996px)" srcset="res/img/banner-mobile.webp">
-            <img src="res/img/banner.webp" alt="Picture of Nicolás Herrera Sepúlveda">
-            
+            <source media="(max-width:1270px)" srcset="res/img/banner-mobile.webp">
+            <img src="res/img/banner.webp" alt="Picture of Nicolás Herrera Sepúlveda" onerror="this.onerror=null;this.src='res/img/banner.png';">
         </picture>
     </div>
-    <section class="game-dev">
-        div
+    <section class="game-dev"  id="game-dev">
+        <h2>Desarrollo de Videojuegos</h2>
+        <div class="game-card">
+           
+            <div class="game-info">
+                <h3>Cognitiv</h3>
+                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
+                <p>
+                    Desarrollo funcional de plataforma de videojuegos serios en realidad virtual para prevenir y tratar el deterioro motriz y cognitivo, para La Universidad Autónoma de Manizales.
+                    <br><br>
+                    Los juegos son desarrollados en Unity para la plataforma Steam-VR. Se desarrollaron en 2023 para presentar a competencia de startups para PRO-Accelerator en Bizkaia.
+                </p>
+            </div>
+            <div class="game-video-container">
+                <div class="game-video" data-id="hb2SPofHG1M" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/cognitiv.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/cognitiv.png';">
+                </div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="game-video-container">
+                <div class="game-video" data-id="2j4chQ2ZjcY" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/probauam.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/probauam.png';">
+
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>ProbaUAM-VR</h3>
+                <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
+                <p>
+                    Investigación sobre videojuegos en realidad virtual para tratar la inestabilidad en adultos mayores, en La Universidad Autónoma de Manizales.
+                    <br><br>
+                    Desde 2021 he realizado múltiples videojuegos en realidad virtual para ayudar a los jugadores con actividades fisioterapéuticas. Estos han sido desarrollados en Unity para la plataforma SteamVR.
+
+
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="game-card">
+            <div class="game-info">
+                <h3>Shadows In the Snow</h3>
+                <div class="skill-icons"><img src="res/img/Godot.webp" alt=""><i class="fa-brands fa-java"></i></div>
+                <p>
+                    (En progreso) Videojuego retro en 2D realizado como un proyecto personal en Godot. Es una adaptación de varias obras del autor H.P. Lovecraft, como Sueños En la Casa de la Bruja, o Nyarlathotep.
+                    <br><br>
+                    Ha sido desarrollado desde 2020, y la mayor parte del arte, desarrollo de software y diseño del videojuego es hecho por mí.
+                </p>
+            </div>
+            <div class="game-video-container">
+                <div class="game-video" data-id="I9kKmGDkbyc" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/shadows.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/shadows.png';">
+                </div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="game-video-container">
+                <div class="game-video" data-id="s8ULuNDTxuM" id="video-production" onclick="labnolIframe(this);">
+                    <img src="res/img/misc.webp" alt="Video Thumbnail" onerror="this.onerror=null;this.src='res/img/misc.png';">
+                
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Otros Proyectos</h3>
+                <div class="skill-icons"><img src="res/img/Godot.webp" alt=""></div>
+                <p>
+                    He participado en competencias de desarrollo de videojuegos en las cuales se requiere realizar un videojuego completamente funcional en un par de días.
+                    <br><br>
+                    Además, he realizado prototipos para otros videojuegos, como un simulador de vuelo retro en 3D.
+                    <br>
+                </p>
+                <a href="https://dethreaper.itch.io/" class="quick_link" target="_blank" id="games-button">PRUEBE MIS VIDEOJUEGOS</a>
+            </div>
+        </div>
     </section>
+    <section class="rendering-3d" id="examples-3d">
+        <div class="title">
+            <h2>Modelado y Renderizado 3D</h2>
+            <p>Trabajo en 3D realizado en Blender como proyecto personal, me ha permitido aprender acerca de modelado, iluminación y manejo de escena, habilidades que he puesto en uso dentro de mis videojuegos.            </p>
+        </div>
+        <div class="render-slider">
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/8-mobile.webp">
+                    <img src="res/img/slider/8.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/8.png';" loading="lazy">
+                </picture>
+                
+            </div>
+            
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/10-mobile.webp">
+                    <img src="res/img/slider/10.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/10.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/3-mobile.webp">
+                    <img src="res/img/slider/3.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/3.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/4-mobile.webp">
+                    <img src="res/img/slider/4.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/4.png';" loading="lazy">
+                </picture>
+            </div>
+            
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/6-mobile.webp">
+                    <img src="res/img/slider/6.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/6.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/7-mobile.webp">
+                    <img src="res/img/slider/7.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/7.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/5-mobile.webp">
+                    <img src="res/img/slider/5.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/5.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/9-mobile.webp">
+                    <img src="res/img/slider/9.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/9.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/1-mobile.webp">
+                    <img src="res/img/slider/1.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/1.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/11-mobile.webp">
+                    <img src="res/img/slider/11.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/11.png';" loading="lazy">
+                </picture>
+            </div>
+            <div class="render-image">
+                <picture>
+                    <source media="(max-width:996px)" srcset="res/img/slider/2-mobile.webp">
+                    <img src="res/img/slider/2.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/slider/2.png';" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="front-end" id="front-end">
+        <div class="title">
+            <h2>Desarrollo de Front-End</h2>
+        </div>
+        <div class="front-end-container">
+            <div class="front-end-info">
+                <div class="skill-icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-wix"></i>
+                    <i class="fa-brands fa-wordpress"></i>
+                </div>
+                <!-- <br> -->
+                <p>
+                    Tengo experiencia desarrollando páginas web <b>responsive</b> en <b>HTML, Laravel, PHP, Wordpress y Wix</b>. Esto incluye todo el lado de Front-End de la aplicación, <b>SEO</b> y optimización.
+                    <br> <br>
+                    Al desarrollar las aplicaciones, mi prioridad es hacerlas lo más rápidas y confiables posibles. También tengo en cuenta las recomendaciones más recientes de SEO, para asegurarme de que cada página resalte entre las demás.                </p>
+                <a href="https://talleraster.com/" target="_blank" class="quick_link">EJEMPLO DE MI TRABAJO</a>
+            </div>
+            <div class="front-end-photos">
+                <img id="phone" src="res/img/phone.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/phone.png';" loading="lazy">
+                <img id="laptop" src="res/img/laptop.webp" alt="Example of a 3D Render" onerror="this.onerror=null;this.src='res/img/laptop.png';" loading="lazy">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>¡Contácteme!</h2>
+        </div>
+        <div class="contact-container">
+            <div class="socials">
+                <h3>Visite mis otras páginas</h3>
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-herrera-sep%C3%BAlveda-b16342278/" class="quick_link" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a>
+                <a href="https://dethreaper.itch.io/" class="quick_link" target="_blank"><i class="fa-brands fa-itch-io"></i>&nbsp; itch.io - Videojuegos</a>
+                <a href="https://www.instagram.com/decranom/" class="quick_link" target="_blank"><i class="fa-brands fa-square-instagram"></i>&nbsp; Instagram - Renderizados en 3D y arte en 2D</a>
+                <a href="https://drive.google.com/drive/folders/1qX6gaYYdXLoMZXd4EZb-gikufT3jttdP?usp=sharing" class="quick_link" target="_blank"><i class="fa-brands fa-google-drive"></i>&nbsp; Google Drive - Renderizados en 3D</a>
+            </div>
+            <div class="image">
+                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" auto-rotate poster="res/models/mr-mort.webp" camera-controls shadow-intensity="1"></model-viewer>
+            </div>
+            <form class="mail" action="http://formspree.io/f/mqkrkdre" method="POST">
+                <h3>¡O escríbame directamente!</h3> 
+                <input id="mail-subject" type="text" name="email" placeholder="sucorreo@mail.com">
+                <input id="mail-subject" type="text" name="message" placeholder="Asunto del correo">
+                <textarea name="body" id="mail-content" cols="40" rows="7" placeholder="Escriba su mensaje aquí"></textarea>
+                <input type="submit" value="ENVIAR CORREO" class="quick_link" target="_blank"></input>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        © 2024 Nicolás Herrera Sepúlveda
+    </footer>
+    <script>
+        function labnolIframe(div) {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?controls=1&amp;autoplay=1&amp;mute=0&amp;loop=1&amp;&enablejsapi=1&showinfo=0');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('class', 'game-video');
+            div.parentNode.replaceChild(iframe,div);
+        }
+
+        $('.render-slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            centerPadding: '2vw',
+            centerMode: true,
+            pauseOnHover: false,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    </script>
 </body> 
 </html>

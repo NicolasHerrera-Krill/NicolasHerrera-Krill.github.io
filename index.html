@@ -34,7 +34,7 @@
         <a href="#" id="start-button" class="quick_link hidden"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Home</span></a>
         <a href="#game-dev" id="game-dev-button-en" class="quick_link hidden"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
         <a href="#examples-3d" id="r3d-button-en" class="quick_link hidden"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
-        <a href="#front-end" id="front-end-button-en"class="quick_link hidden"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
+        <a href="#front-end" id="front-end-button-en"class="quick_link hidden"><i class="fa-solid fa-laptop-code"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
         <a href="#contact" id="contact-button-en" class="quick_link hidden"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
         <script>
             {
@@ -62,9 +62,15 @@
             <a href="#" id="start-button" onclick="openNav();"><i class="fa-solid fa-house"></i> <span class="hidden-button-text">&nbsp; Home</span></a>
             <a href="#game-dev" id="game-dev-button-en" onclick="openNav();"><i class="fa-solid fa-gamepad"></i> <span class="hidden-button-text">&nbsp;Game Dev</span></a>
             <a href="#examples-3d" id="r3d-button-en" onclick="openNav();"><i class="fa-solid fa-cube"></i> <span class="hidden-button-text">&nbsp;3D Rendering</span></a>
-            <a href="#front-end" id="front-end-button-en" onclick="openNav();"><i class="fa-solid fa-globe"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
+            <a href="#front-end" id="front-end-button-en" onclick="openNav();"><i class="fa-solid fa-laptop-code"></i> <span class="hidden-button-text">&nbsp;Front-end Dev</span></a>
             <a href="#contact" id="contact-button-en" onclick="openNav();"><i class="fa-solid fa-phone"></i> <span class="hidden-button-text">&nbsp;Contact</span></a>
-            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-herrera-sep%C3%BAlveda-b16342278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://dethreaper.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.instagram.com/decranom/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="index-es.html"><i class="fa-solid fa-globe"></i>&nbsp;<span>Ver en español</span> </a>
+            <p>© 2023 Nicolás Herrera Sepúlveda</p>
         </div>
         <script>
             function openNav(){
@@ -74,15 +80,18 @@
                 backdrop.classList.toggle("mobile-nav-hidden");
             }
         </script>
-    </nav>
+    </nav>  
+    <div class="lang_button">
+        <a href="index-es.html"><span>Ver en español&nbsp;</span> <i class="fa-solid fa-globe"></i></a>
+    </div>
     <div class="title-card">
         <div class="title-info">
             <h1>NICOLÁS HERRERA SEPÚLVEDA</h1>
             <h3>Software Developer focusing on videogames, 3D artist.</h3>
-            <a href="" class="quick_link">CONTACT</a>
+            <a href="#contact" class="quick_link">CONTACT</a>
         </div>
         <picture>
-            <source media="(max-width:996px)" srcset="res/img/banner-mobile.webp">
+            <source media="(max-width:1270px)" srcset="res/img/banner-mobile.webp">
             <img src="res/img/banner.webp" alt="Picture of Nicolás Herrera Sepúlveda" onerror="this.onerror=null;this.src='res/img/banner.png';">
         </picture>
     </div>
@@ -95,7 +104,7 @@
                 <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
                 <p>
                     Functional development of a serious video game platform in virtual reality to prevent and treat motor and cognitive impairment, for the Autonomous University of Manizales.
-                    <br>
+                    <br><br>
                     The games were developed in Unity for the Steam-VR platform. They were developed in 2023 to present the startup competition for PRO-Accelerator in Bizkaia.
 
 
@@ -119,7 +128,7 @@
                 <div class="skill-icons"><i class="fa-brands fa-unity"></i><img src="res/img/Csharp.webp" alt=""><i class="fa-brands fa-steam"></i></div>
                 <p>
                     Investigation on VR games for the treatment and prevention of instability in older adults, at Autonomous University of Manizales.
-                    <br>
+                    <br><br>
                     Since 2021 I have developed multiple games on VR to help players with their different physical-therapeautical activities. They have been developed on Unity 3D for the SteamVR platform.
                 </p>
             </div>
@@ -132,6 +141,7 @@
                 <div class="skill-icons"><img src="res/img/Godot.webp" alt=""><i class="fa-brands fa-java"></i></div>
                 <p>
                     (WIP) Retro 2D video game made as a personal project in Godot. It is an adaptation of several works by author H.P. Lovecraft, like Dreams in the Witch House or Nyarlathotep.
+                    <br><br>
                     It has been in development since 2020, and most of the art, software development, and design of the game is done by me.
                 </p>
             </div>
@@ -153,7 +163,7 @@
                 <div class="skill-icons"><img src="res/img/Godot.webp" alt=""></div>
                 <p>
                     I have participated in multiple game jams, in which I am required to make a fully functional video game in a couple of days.
-                    <br>
+                    <br><br>
                     In addition, I have made prototypes for other video games, such as a retro 3D flight simulator.
                     <br>
                 </p>
@@ -276,22 +286,26 @@
         <div class="contact-container">
             <div class="socials">
                 <h3>Visit my other pages</h3>
-                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a>
-                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-itch-io"></i>&nbsp; itch.io</a>
-                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-square-instagram"></i>&nbsp; Instagram</a>
-                <a href="" class="quick_link" target="_blank"><i class="fa-brands fa-google-drive"></i>&nbsp; Google Drive</a>
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-herrera-sep%C3%BAlveda-b16342278/" class="quick_link" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a>
+                <a href="https://dethreaper.itch.io/" class="quick_link" target="_blank"><i class="fa-brands fa-itch-io"></i>&nbsp; itch.io - Videogame Projects</a>
+                <a href="https://www.instagram.com/decranom/" class="quick_link" target="_blank"><i class="fa-brands fa-square-instagram"></i>&nbsp; Instagram - 3D renders and 2D art</a>
+                <a href="https://drive.google.com/drive/folders/1qX6gaYYdXLoMZXd4EZb-gikufT3jttdP?usp=sharing" class="quick_link" target="_blank"><i class="fa-brands fa-google-drive"></i>&nbsp; Google Drive - Full res 3D renders</a>
             </div>
             <div class="image">
-                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" auto-rotate poster="shared-assets/models/mr-mort.webp" camera-controls shadow-intensity="1"></model-viewer>
+                <model-viewer alt="3D model of a mascot" src="res/models/mr-mort.glb" loading="lazy" auto-rotate poster="res/models/mr-mort.webp" camera-controls shadow-intensity="1"></model-viewer>
             </div>
-            <div class="mail">
-                <h3>Or contact me directly!</h3>
-            </div>
+            <form class="mail" action="http://formspree.io/f/mqkrkdre" method="POST">
+                <h3>Or contact me directly!</h3> 
+                <input id="mail-subject" type="text" name="email" placeholder="youremail@mail.com">
+                <input id="mail-subject" type="text" name="message" placeholder="Message subject">
+                <textarea name="body" id="mail-content" cols="40" rows="7" placeholder="Type your message here"></textarea>
+                <input type="submit" value="SEND E-MAIL" class="quick_link" target="_blank"></input>
+            </form>
         </div>
     </section>
 
     <footer>
-        © 2023 Nicolás Herrera Sepúlveda
+        © 2024 Nicolás Herrera Sepúlveda
     </footer>
     <script>
         function labnolIframe(div) {
